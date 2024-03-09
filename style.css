@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: #436850;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 5rem 0;
+}
+
+/*  Navbar */
+nav {
+  background-color: var(--main-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.navbar .navbar-item {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .navbar-item a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  transition-duration: 200ms;
+}
+
+.navbar .navbar-item a:hover {
+  opacity: 0.5;
+  color: black;
+}
+
+/* Home */
+
+.home,
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.home .home-text h3,
+.about .about-text h3,
+.grid {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.home .home-text p,
+.about .about-text p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.home .home-text a {
+  background-color: var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 10px;
+  transition-duration: 200ms;
+}
+
+.home .home-img img,
+.about .about-img img {
+  width: max-content;
+  height: auto;
+}
+
+.home .home-text a:hover {
+  opacity: 0.5;
+}
+
+/* Home END */
+
+/*learning materials START*/
+.learning-text h3 {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 94px;
+}
+
+.learning-text p {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  max-width: 114rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  left: 50%;
+  top: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  padding-top: 38rem;
+}
+
+.grid__item {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  padding: 0 auto;
+  margin-right: 3.5rem;
+  margin-left: 3.5rem;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: 6.5rem;
+  margin-top: 28px;
+  object-fit: none;
+}
+
+.card__content {
+  padding: 3rem 3rem;
+}
+
+.card__header {
+  font-size: 28px;
+  line-height: 42px;
+  height: 1.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  color: #0d0d0d;
+}
+
+.card__text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.8px;
+  color: #34364a;
+  margin-bottom: 1.5rem;
+}
+
+.card__btn {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  gap: 10px;
+  margin-top: 3.5rem;
+  padding: 12px, 30px, 12px, 30px;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card__btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.card__btn:hover,
+.card__btn:active {
+  opacity: 0.5;
+}
+.card__btn:hover span,
+.card__btn:active span {
+  margin-left: 1.5rem;
+}
+
+/*learning materials End*/
+
+/*footer start*/
+footer {
+  width: 100%;
+  position: relative;
+  background-color: #18171d;
+  color: #fff;
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.row {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  padding: 10px;
+  padding-bottom: 70px;
+}
+
+.col_text {
+  text-align: center;
+}
+
+.simbol {
+  width: 17rem;
+  padding-bottom: 10px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.social-icons .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/*footer end*/
+
+/*handphone responsive start*/
+@media (max-width: 768px) {
+  .navbar,
+  .home,
+  .about {
+    flex-direction: column;
+  }
+
+  .grid,
+  .grid__item {
+    grid-gap: 3rem;
+    position: relative;
+    top: 17rem;
+    justify-content: center;
+
+  }
+
+  .learning-text h3{
+    line-height: 50px;
+  }
+
+  .learning-text p{
+    padding-top: 20px;
+  }
+
+
+  .col_text {
+    padding-bottom: 38px;
+  }
+
+  .home .home-text,
+  .about .about-text {
+    order: 2;
+  }
+
+  .home .home-img img,
+  .about .about-img img {
+    order: 1;
+    max-width: 100%;
+    padding-top: 45px;
+  }
+
+  .home .home-text h3,
+  .about .about-text h3,
+  .learning .learning-text h3 {
+    font-size: 32px;
+  }
+
+  .home .home-text p,
+  .about .about-text p .learning .learning-text p {
+    font-size: 16px;
+  }
+
+  .home .home-text a {
+    padding: 14px 24px;
+  }
+}
+
+/*handphone responsive end*/
+
+/* ipad, tablet */
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (orientation: portrait) {
+  .navbar,
+  .home,
+  .about,
+  .grid {
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .grid,
+  .grid__item {
+    grid-gap: 3rem;
+    position: relative;
+    top: 25rem;
+    padding-top: 2rem;
+  }
+
+  .home .home-img img,
+  .about .about-img img {
+    width: 28rem;
+  }
+}
+
+/*macbook Air*/
+@media only screen and (min-width: 800px) and (max-width: 1280px) and (orientation: landscape) {
+  .grid,
+  .grid__item {
+    margin-bottom: 28px;
+    position: relative;
+    top: 22rem;
+    padding-top: 2rem;
+    display: block;
+  }
+}
